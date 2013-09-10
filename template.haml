@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Bootstrap 101 Template
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %link(href="../bootstrap/css/home.css" rel="stylesheet" media="screen")
+    %link(href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen")
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %ul.nav
+            %li.active
+              %a(href="#home") Home
+            %li
+              %a(href="#mimi") Mimi 
+            %li
+              %a(href="#black") Black 
+    #content.container
+      #mimi
+        %h1 mimi
+        %pre
+          %p content test,
+        #mimi.photo
+      #black 
+        %h1 black
+        #black.photo
+      #home
+        %h1 home
+        #home.photo
+      %button.btn.btn-primary test
+    #footer.container
+      %h1 I`m a footer
+    %script(src="http://code.jquery.com/jquery.js")
+    %script(src="../bootstrap/js/bootstrap.min.js")
+    %script(src="app.js")
+
+
