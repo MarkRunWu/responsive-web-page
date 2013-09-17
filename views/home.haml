@@ -1,0 +1,18 @@
+%script{ "src" : "./js/jquery-1.10.2.min.js" }
+%h1
+  hello
+    =hello_world
+%input{ 'name': 'url' }
+%button#query snapshot
+  :javascript
+    $(document).ready( function(){
+      $('button').on('click', function(){
+        var url = $('input').val();
+        $.get('/query' , url , function( data ){
+          $('body').append( $('<img src=' + data + '><\/img>') );
+          
+        });
+      });
+    }); 
+-if(snapshot)
+  %img{ 'src' : snapshot }

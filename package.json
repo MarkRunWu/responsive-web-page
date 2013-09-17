@@ -1,0 +1,11 @@
+{
+    "name" : "table",
+    "version" : "0.0.1",
+    "dependencies" : {
+        "express" :  "latest",
+        "haml" : "0.4.3",
+        "hamljs" : "0.6.1",
+        "consolidate" : "0.9.1",
+        "phantomjs" : "1.9.2-0"
+    }
+}

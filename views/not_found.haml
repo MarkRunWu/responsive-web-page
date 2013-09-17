@@ -1,0 +1,7 @@
+%body
+  %h1 error
+    %a{'href': '/'} back to home~
+  :javascript
+    window.setTimeout( function(){
+      window.location.href = '/';
+    }, 3000 );
